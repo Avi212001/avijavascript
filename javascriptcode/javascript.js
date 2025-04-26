@@ -40,5 +40,209 @@ console.log(j.email,i.email);
 
 //--------------------------------------------------------------string in javascript--------------------------------------------
 
+//when we declatre the string in javascript in any code editor keep in  ind it always store in variable on the another hand when 
+// we declare the string in console window in may not take to store in any variable 
+//when we want to concat something in string we simply use + sign to concat the string multiple varibale
+//But in  odern world we use backtick (``) and placeholder in this we dont use the + sign anymore 
+//the synatx of declaring the backtick is console.log(`the name of the person is ${a} and the age is ${age}`)
+// this synatx is string interpollation 
+/*anchor
+: 
+ƒ anchor()
+at
+: 
+ƒ at()
+big
+: 
+ƒ big()
+blink
+: 
+ƒ blink()
+bold
+: 
+ƒ bold()
+charAt
+: 
+ƒ charAt()
+charCodeAt
+: 
+ƒ charCodeAt()
+codePointAt
+: 
+ƒ codePointAt()
+concat
+: 
+ƒ concat()
+constructor
+: 
+ƒ String()
+endsWith
+: 
+ƒ endsWith()
+fixed
+: 
+ƒ fixed()
+fontcolor
+: 
+ƒ fontcolor()
+fontsize
+: 
+ƒ fontsize()
+includes
+: 
+ƒ includes()
+indexOf
+: 
+ƒ indexOf()
+isWellFormed
+: 
+ƒ isWellFormed()
+italics
+: 
+ƒ italics()
+lastIndexOf
+: 
+ƒ lastIndexOf()
+length
+: 
+0
+link
+: 
+ƒ link()
+localeCompare
+: 
+ƒ localeCompare()
+match
+: 
+ƒ match()
+matchAll
+: 
+ƒ matchAll()
+normalize
+: 
+ƒ normalize()
+padEnd
+: 
+ƒ padEnd()
+padStart
+: 
+ƒ padStart()
+repeat
+: 
+ƒ repeat()
+replace
+: 
+ƒ replace()
+replaceAll
+: 
+ƒ replaceAll()
+search
+: 
+ƒ search()
+slice
+: 
+ƒ slice()
+small
+: 
+ƒ small()
+split
+: 
+ƒ split()
+startsWith
+: 
+ƒ startsWith()
+strike
+: 
+ƒ strike()
+sub
+: 
+ƒ sub()
+substr
+: 
+ƒ substr()
+substring
+: 
+ƒ substring()
+sup
+: 
+ƒ sup()
+toLocaleLowerCase
+: 
+ƒ toLocaleLowerCase()
+toLocaleUpperCase
+: 
+ƒ toLocaleUpperCase()
+toLowerCase
+: 
+ƒ toLowerCase()
+toString
+: 
+ƒ toString()
+toUpperCase
+: 
+ƒ toUpperCase()
+toWellFormed
+: 
+ƒ toWellFormed()
+trim
+: 
+ƒ trim()
+trimEnd
+: 
+ƒ trimEnd()
+trimLeft
+: 
+ƒ trimStart()
+trimRight
+: 
+ƒ trimEnd()
+trimStart
+: 
+ƒ trimStart()
+valueOf
+: 
+ƒ valueOf()
+Symbol(Symbol.iterator)
+: 
+ƒ [Symbol.iterator]()
+[[Prototype]]
+: 
+Object
+*/
+//these all are the method which is perform on string to perform some operation on string 
+//now take the experiment the code
+let gamename = "avibhargav";
+
+//we know string follow  zero indexing so when we access the data with 0 value then 
+
+console.log(gamename[0]);
+
+//now the next property was length and touppercase 
+
+console.log(gamename.length);
+console.log(gamename.toUpperCase());
+//next property was to find which index have which charcater -> charat(index)
+console.log(gamename.charAt(6));
+//indexof this property tells about the which character at which position 
+console.log(gamename.indexOf('a'));
+//the next property was substring and slice the only difference is when i use substring would not accept the negative value for 
+//finding the reverse cahracter of the string it ignore the vlaue andd accept the value of 0 but slice it accept the negative value 
+console.log(gamename.substring(0,4));
+console.log(gamename.slice(5,8));
+//next property was trim we use to replace the ehite space from the string only 
+let whitespace = "  avui     ";
+console.log(whitespace.trim());
+//the next property was replace it would replace the somthing from the string an replace with another thing 
+
+let url = "www.google/avi%20bhargav.com";
+console.log(url.replace('%20','_'));
+//the next propetry eas include it give the boolean valuees that if some value is present of the given string or not 
+console.log(url.includes('avi'));
 
 
+//the property was split in this we split the string in forms of array and fing the value 
+let arr = "avi-bhargav-21001";
+
+let arr1=(arr.split('-'));
+
+console.log(arr1[0]);
