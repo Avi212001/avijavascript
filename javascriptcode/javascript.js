@@ -246,3 +246,51 @@ let arr = "avi-bhargav-21001";
 let arr1=(arr.split('-'));
 
 console.log(arr1[0]);
+
+
+//------------------------------------------------------Number and Math ------------------------------
+
+//in this topic we use number and math topic 
+//when we declare the number we have two ways 1-> let a = 2890 and 2-> let a = new Number(2890) the only differnece is the representation when we 
+//declare new Number it states that it will be number nothing else 
+
+let num = 100000;
+
+console.log(num);
+
+//with the help of this we perofrm various operation just like to find max min so many properties and method 
+// for that some of are 
+//1-> to fixed it is used when we have some decimal number and we want only one number is show after decimal then we use tofixed 
+
+console.log(num.toFixed(2));
+
+//2-> tolocalstring() is used to basically define the number and break them into hundred thousand 
+
+console.log(num.toLocaleString());
+
+//3-> tostring() -> it bascially convert the integer into string and then perform various function of string as well 
+
+console.log(num.toString());
+
+//4 max and min is used to know about the max and min value of the integer 
+
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_VALUE);
+
+// to precision -> this is used round of the number if the precision have doing d=some operationa fter decimal value 
+// console.log(num.toPrecision(2));
+
+
+//----------------------the next topic is with math from this method we use various opertaion just like round of , random ,max ,min,square,
+ 
+
+let num2 = 5.8;
+console.log(Math.sqrt(num));
+
+console.log(Math.floor(Math.sqrt(num)));
+console.log(Math.ceil(Math.sqrt(num)));
+console.log(Math.round(num));
+console.log(Math.random());
+let min = 1;
+let max = 6;
+console.log(Math.floor(Math.random()*(max-min+1))+min);
