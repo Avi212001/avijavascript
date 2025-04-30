@@ -21,7 +21,7 @@
 // console.log(typeof(a));
 
 
-
+//objects
 // let j ={
 //  email:"avisharma2222@gmail.com",
 //  pass:"sdnfjf"
@@ -315,4 +315,67 @@ console.log(myarray);
 
 myarray.pop();
 console.log(myarray);
+//if we add something in front of the array then in that case we use unshift 
+myarray.unshift(18);
+console.log(myarray);
+//and if we remove something from the front of the array then we use shift 
+myarray.shift();
+console.log(myarray);
+//the next method is include which give true if the value is  present in the array and if the value is not present then it give false 
+console.log(myarray.includes(9));  
+
+//the next method is indexof it give you the index of the particualr element of the arrayeither it the index of that element or -1 
+//if the element is snot present    
+console.log(myarray.indexOf(19));
+
+//the next method join -> this io used to convert the array into string 
+console.log(myarray.join());
+
+
+//the next method is slice or splice 
+let myarr1 = [0,1,2,3,4,5];
+
+console.log("A ",myarr1);
+let a = myarr1.slice(1,4);
+//when we use slice the last range not include and notice that when we slice it doesnot change an orignal call by value 
+console.log(myarr1);
+console.log(a);
+
+//now we use splice in this the range is include butthe change occur in orignall array call by refernces 
+let c = myarr1.splice(1,4);
+console.log("c ",myarr1);
+console.log(c);
+
+//the next method is to concat two array and create a new array 
+let arr_1 = ["ssa","deew","ewfwef"];
+let arr_2 =["asd",78,89];
+
+let arr_3 = arr_1.concat(arr_2);
+console.log(arr_3);
+
+//we have another way to add two or more than two array in that case we use spread 
+let arr_4 = [...arr_1,...arr_2];
+console.log(arr_4);
+
+
+//suppose we have the array in that array we have multiple array inside one array and we want to convert them into one array 
+//for that we have flat method which convert complex array into single variable
+let new_arr = [1,2,[3,3],7,8,[9,10],[11,12]];
+console.log(new_arr.flat(Infinity));
+
+//suppose we have take the user input and that was another type it was string ,object, int 
+//to convert them into array we have some method 
+console.log(Array.isArray("hitesh"));
+let c_1 = Array.from("hitesh");
+console.log(c_1);
+
+
+//suppose we have multiple varibale in which so many multiple datatype store we want to store that into array 
+let n = 1;
+let m = "mayt";
+let k = null;
+
+let l = Array.of(n,m,k);
+console.log(l);
+
 
